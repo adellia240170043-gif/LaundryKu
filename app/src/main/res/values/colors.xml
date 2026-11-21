@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Biru kehijauan (teal) -->
+    <color name="laundry_primary">#FF3CC0CC</color>
+    <color name="laundry_on_primary">#FF00262B</color>
+    <color name="laundry_primary_container">#FF0F4C57</color>
+    <color name="laundry_on_primary_container">#FFBFF1F6</color>
+    <color name="laundry_secondary">#FF5CC6B8</color>
+    <color name="laundry_on_secondary">#FF00201C</color>
+    <color name="laundry_secondary_container">#FF14463F</color>
+    <color name="laundry_on_secondary_container">#FFC2F0E9</color>
+
+    <!-- Hitam samar kebiruan -->
+    <color name="laundry_background">#FF0A1214</color>
+    <color name="laundry_surface">#FF0F1A1D</color>
+    <color name="laundry_surface_variant">#FF1A2B2F</color>
+    <color name="laundry_on_surface">#FFE1EEF0</color>
+    <color name="laundry_on_surface_variant">#FFA9C0C4</color>
+    <color name="laundry_outline">#FF3E5A60</color>
+</resources>

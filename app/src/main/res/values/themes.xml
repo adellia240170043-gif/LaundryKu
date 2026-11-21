@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.LaundryKu" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/laundry_primary</item>
+        <item name="colorOnPrimary">@color/laundry_on_primary</item>
+        <item name="colorPrimaryContainer">@color/laundry_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/laundry_on_primary_container</item>
+
+        <item name="colorSecondary">@color/laundry_secondary</item>
+        <item name="colorOnSecondary">@color/laundry_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/laundry_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/laundry_on_secondary_container</item>
+
+        <item name="android:colorBackground">@color/laundry_background</item>
+        <item name="colorOnBackground">@color/laundry_on_surface</item>
+        <item name="colorSurface">@color/laundry_surface</item>
+        <item name="colorOnSurface">@color/laundry_on_surface</item>
+        <item name="colorSurfaceVariant">@color/laundry_surface_variant</item>
+        <item name="colorOnSurfaceVariant">@color/laundry_on_surface_variant</item>
+        <item name="colorOutline">@color/laundry_outline</item>
+    </style>
+
+    <style name="Theme.LaundryKu" parent="Base.Theme.LaundryKu" />
+</resources>
