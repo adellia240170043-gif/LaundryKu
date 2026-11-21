@@ -31,4 +31,17 @@
     <string name="error_network">Tidak ada koneksi internet. Periksa jaringan lalu coba lagi</string>
     <string name="error_too_many_requests">Terlalu banyak percobaan. Coba lagi beberapa saat</string>
     <string name="error_unknown">Terjadi kesalahan. Silakan coba lagi</string>
+    <!-- Jenis layanan -->
+    <string name="service_cuci_kering">Cuci Kering</string>
+    <string name="service_cuci_setrika">Cuci Setrika</string>
+    <string name="service_setrika_saja">Setrika Saja</string>
+
+    <!-- Status pesanan -->
+    <string name="status_diterima">Diterima</string>
+    <string name="status_dicuci">Dicuci</string>
+    <string name="status_selesai">Selesai</string>
+    <string name="status_diambil">Diambil</string>
+
+    <!-- Error data -->
+    <string name="error_permission">Anda tidak punya izin mengakses data ini. Silakan masuk ulang</string>
 </resources>
