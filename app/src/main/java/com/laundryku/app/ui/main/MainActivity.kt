@@ -1,33 +1,40 @@
 package com.laundryku.app.ui.main
 
-import android.content.Intent
 import android.os.Bundle
-import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.core.view.isVisible
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.setupWithNavController
 import com.laundryku.app.R
 import com.laundryku.app.databinding.ActivityMainBinding
-import com.laundryku.app.ui.auth.AuthViewModel
-import com.laundryku.app.ui.auth.LoginActivity
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-    private val authViewModel: AuthViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.tvWelcome.text =
-            getString(R.string.welcome_user, authViewModel.currentUserLabel().orEmpty())
-
-        binding.btnLogout.setOnClickListener {
-            authViewModel.logout()
-            val intent = Intent(this, LoginActivity::class.java).addFlags(
-                Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+        // Beri jarak dari status bar dan bilah navigasi sistem
+        ViewCompat.setOnApplyWindowInsetsListener(binding.root) { view, insets ->
+            val bars = insets.getInsets(
+                WindowInsetsCompat.Type.systemBars() or WindowInsetsCompat.Type.displayCutout()
             )
-            startActivity(intent)
+            view.setPadding(bars.left, bars.top, bars.right, bars.bottom)
+            WindowInsetsCompat.CONSUMED
+        }
+
+        val navHost = supportFragmentManager.findFragmentById(R.id.navHost) as NavHostFragment
+        val navController = navHost.navController
+        binding.bottomNav.setupWithNavController(navController)
+
+        // Menu bawah disembunyikan di halaman form
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+            binding.bottomNav.isVisible = destination.id != R.id.orderFormFragment
         }
     }
 }

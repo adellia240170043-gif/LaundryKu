@@ -44,4 +44,54 @@
 
     <!-- Error data -->
     <string name="error_permission">Anda tidak punya izin mengakses data ini. Silakan masuk ulang</string>
+    <!-- Daftar pesanan -->
+    <string name="title_orders">Pesanan</string>
+    <string name="hint_search_customer">Cari nama pelanggan</string>
+    <string name="filter_all">Semua</string>
+    <string name="empty_orders">Belum ada pesanan. Ketuk tombol + untuk menambah</string>
+    <string name="empty_search">Pesanan tidak ditemukan</string>
+    <string name="action_retry">Coba lagi</string>
+    <string name="action_add_order">Tambah pesanan</string>
+    <string name="order_detail_format">%1$s • %2$s kg</string>
+    <string name="msg_add_coming">Form tambah pesanan dibuat di langkah berikutnya</string>
+    <!-- Form pesanan -->
+    <string name="title_add_order">Tambah pesanan</string>
+    <string name="title_edit_order">Edit pesanan</string>
+    <string name="label_customer_name">Nama pelanggan</string>
+    <string name="label_service">Jenis layanan</string>
+    <string name="label_weight">Berat (kg)</string>
+    <string name="label_total">Total harga</string>
+    <string name="label_status">Status</string>
+    <string name="action_save">Simpan</string>
+    <string name="action_delete">Hapus</string>
+    <string name="action_cancel">Batal</string>
+    <string name="error_customer_empty">Nama pelanggan tidak boleh kosong</string>
+    <string name="error_weight_empty">Berat tidak boleh kosong</string>
+    <string name="error_weight_invalid">Masukkan berat berupa angka lebih dari 0</string>
+    <string name="dialog_delete_title">Hapus pesanan?</string>
+    <string name="dialog_delete_message">Pesanan ini akan dihapus permanen dan tidak bisa dikembalikan</string>
+    <string name="msg_order_saved">Pesanan tersimpan</string>
+    <string name="msg_order_deleted">Pesanan dihapus</string>
+    <!-- Navigasi bawah -->
+    <string name="tab_orders">Pesanan</string>
+    <string name="tab_summary">Ringkasan</string>
+    <string name="tab_profile">Profil</string>
+
+    <!-- Ringkasan -->
+    <string name="title_summary">Ringkasan</string>
+    <string name="label_total_orders">Total pesanan</string>
+    <string name="label_total_value">Total nilai pesanan</string>
+    <string name="label_per_status">Pesanan per status</string>
+
+    <!-- Profil -->
+    <string name="title_profile">Profil</string>
+    <string name="dialog_logout_title">Keluar dari akun?</string>
+    <string name="dialog_logout_message">Anda perlu masuk lagi untuk melihat pesanan</string>
+    <!-- Detail pesanan -->
+    <string name="title_order_detail">Detail pesanan</string>
+    <string name="label_date_in">Tanggal masuk</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_back">Kembali</string>
+    <string name="desc_order_photo">Foto cucian</string>
+    <string name="weight_value_format">%1$s kg</string>
 </resources>

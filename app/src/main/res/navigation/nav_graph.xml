@@ -1,6 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:app="http://schemas.android.com/apk/res-auto"
-             android:id="@+id/nav_graph">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/orderListFragment">
+
+    <fragment
+        android:id="@+id/orderListFragment"
+        android:name="com.laundryku.app.ui.orders.OrderListFragment"
+        android:label="OrderListFragment" />
+
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="com.laundryku.app.ui.orders.SummaryFragment"
+        android:label="SummaryFragment" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.laundryku.app.ui.orders.ProfileFragment"
+        android:label="ProfileFragment" />
+
+    <fragment
+        android:id="@+id/orderDetailFragment"
+        android:name="com.laundryku.app.ui.orders.OrderDetailFragment"
+        android:label="OrderDetailFragment">
+        <argument
+            android:name="orderId"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/orderFormFragment"
+        android:name="com.laundryku.app.ui.orders.OrderFormFragment"
+        android:label="OrderFormFragment">
+        <argument
+            android:name="orderId"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
 
 </navigation>

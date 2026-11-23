@@ -32,6 +32,9 @@ class AuthViewModel : ViewModel() {
     }
 
     fun logout() = repository.logout()
+    fun currentName(): String = repository.currentUser?.displayName.orEmpty()
+
+    fun currentEmail(): String = repository.currentUser?.email.orEmpty()
 
     fun resetState() {
         _authState.value = UiState.Idle
