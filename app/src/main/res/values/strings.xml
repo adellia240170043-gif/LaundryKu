@@ -94,4 +94,13 @@
     <string name="action_back">Kembali</string>
     <string name="desc_order_photo">Foto cucian</string>
     <string name="weight_value_format">%1$s kg</string>
+    <!-- Foto cucian -->
+    <string name="label_photo">Foto cucian (opsional)</string>
+    <string name="action_take_photo">Ambil foto</string>
+    <string name="action_pick_gallery">Galeri</string>
+    <string name="action_remove_photo">Hapus foto</string>
+    <string name="desc_photo_preview">Pratinjau foto cucian</string>
+    <string name="msg_camera_denied">Izin kamera ditolak. Anda masih bisa memilih foto dari galeri</string>
+    <string name="msg_camera_unavailable">Kamera tidak tersedia di perangkat ini</string>
+    <string name="msg_photo_failed">Foto gagal diproses. Coba foto lain</string>
 </resources>

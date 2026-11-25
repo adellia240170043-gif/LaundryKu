@@ -20,6 +20,7 @@ import com.laundryku.app.data.model.Order
 import com.laundryku.app.data.model.OrderStatus
 import com.laundryku.app.data.model.ServiceType
 import com.laundryku.app.databinding.FragmentOrderDetailBinding
+import com.laundryku.app.util.ImageUtils
 import com.laundryku.app.util.UiState
 import com.laundryku.app.util.formatDate
 import com.laundryku.app.util.formatRupiah
@@ -89,6 +90,11 @@ class OrderDetailFragment : Fragment() {
             binding.tvStatus,
             ColorStateList.valueOf(ContextCompat.getColor(requireContext(), statusColor(status)))
         )
+
+        // Foto cucian (kalau ada)
+        val bitmap = if (order.photo.isNotEmpty()) ImageUtils.base64ToBitmap(order.photo) else null
+        binding.ivPhoto.setImageBitmap(bitmap)
+        binding.ivPhoto.isVisible = bitmap != null
     }
 
     private fun statusColor(status: OrderStatus): Int = when (status) {
